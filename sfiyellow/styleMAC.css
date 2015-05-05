@@ -1,0 +1,109 @@
+
+body         {font-size: x-small; color: #000000; font-family: Verdana, Arial, Helvetica, sans-serif;}
+body         {background-repeat: repeat;background-attachment: fixed;}
+body         {margin: 0px;}
+pre          {font-size: x-small; color: #505f7d; font-family: Terminal;}
+
+table, tr, td, p, div, .content {font-size: x-small; font-family: Verdana, Arial, Helvetica, sans-serif;}
+input, select, textarea         {background-color : #FFFFE6;font-size: x-small; color: #000000; font-family: Verdana, Arial, Helvetica, sans-serif;}
+
+
+a            {color: #212121; font-weight: bold; text-decoration: none;}
+a:link       {color: #505f7d; font-weight: bold;}
+a:visited    {color: #505f7d; font-weight: bold;}
+a:hover      {color: #212121; text-decoration: underline;}
+
+.title a         {color: #343434; text-decoration: none;}
+.title a:link    {color: #505f7d; text-decoration: none;}
+.title a:visited {color: #505f7d; text-decoration: none;}
+.title a:hover   {color: #343434; text-decoration: none;}
+
+.forum  	 {color: #000000;}
+.forum a         {color: #FFC6C6; text-decoration: none;}
+.forum a:link    {color: #FFEAEA; text-decoration: none;}
+.forum a:visited {color: #FFEAEA; text-decoration: none;}
+.forum a:hover   {color: #FFC6C6; text-decoration: none;}
+
+
+.bold        {font-weight: bold;}
+.white       {color: #6600CC;}
+.bgblack     {background-color: #000000;}
+.bggray      {background-color: #FFFFD9;}
+.bglightblue {background-color: #FFFF97;}
+.fggray      {color: #333333;}
+.fgoffwhite  {color: #505f7d;}
+.byline      {color: #505f7d; font-size:9px; text-align:center;}
+.content     {color: #505f7d;}
+
+#clock           {color: #000000; font-size:x-small;}
+
+h1 {}
+h2 {}
+h3 {}
+h4 {}
+h5 {}
+ul { margin: 2px; padding: 2px; list-style: decimal inside; text-align: left;}
+li { margin-left: 2px; list-style: square inside; color: #505f7d}
+
+input.formButton {}
+
+.item {border: 1px solid #505f7d;}
+.itemHead {padding: 3px; background-color: #43506B; color: #FFFFFF;}
+.itemInfo {text-align: right?????A?º??; padding: 3px; background-color: #efefef}
+.itemTitle a {font-size: 130%; font-weight: bold; font-variant: small-caps; color: #ffffff; background-color: transparent;}
+.itemPoster {font-size: 90%; font-style:italic;}
+.itemPostDate {font-size: 90%; font-style:italic;}
+.itemStats {font-size: 90%; font-style:italic;}
+.itemBody {padding-left: 5px;}
+.itemText {margin-top: 5px; margin-bottom: 5px; line-height: 1.5em;}
+.itemText:first-letter {font-size: 133%; font-weight: bold;}
+.itemFoot {text-align: right; padding: 3px; background-color: #efefef}
+.itemAdminLink {font-size: 90%;}
+.itemPermaLink {font-size: 90%;}
+
+th {background-color: #FFB66C; color: #FFFFFF; padding : 2px; vertical-align : middle; font-family: Verdana, Arial, Helvetica, sans-serif;}
+
+.outer {border: 1px solid silver; width: 100%}
+.head {background-color: #FFFFE6; padding: 5px; font-weight: bold;}
+
+.even {background-color: #FFFFE6; padding: 5px; color: #000000; vertical-align : top}
+.even a         {color: #343434; text-decoration: none; font-weight: bold }
+.even a         {color: #FFFFFF; text-decoration: none; font-weight: bold }
+.even a:link    {color: #343434; text-decoration: none; font-weight: bold}
+.even a:visited {color: #343434; text-decoration: none; font-weight: bold}
+.even a:hover   {color: #FFFFFF; text-decoration: none; font-weight: bold}
+.odd {background-color: #FFCD9B; padding: 5px; color: #000000; vertical-align : top}
+.odd a         {color: #343434; text-decoration: none; font-weight: bold}
+.odd a:link    {color: #505f7d; text-decoration: none; font-weight: bold}
+.odd a:visited {color: #505f7d; text-decoration: none; font-weight: bold}
+.odd a:hover   {color: #FFFFFF; text-decoration: none; font-weight: bold}
+.foot {background-color: #FFFFD2; padding: 5px; font-weight: bold;}
+tr.even td {background-color: #FFC488; padding: 5px;}
+tr.odd td {background-color: #FFFFD2; padding: 5px;}
+
+div.errorMsg { background-color: #FFCCCC; text-align: center; border-top: 1px solid #DDDDFF; border-left: 1px solid #DDDDFF; ?????A?º??border-right: 1px solid #AAAAAA; border-bottom: 1px solid #AAAAAA; font-weight: bold; padding: 10px;}
+div.confirmMsg { background-color: #DDFFDF; color: #136C99; text-align: center; border-top: 1px solid #DDDDFF; border-left: 1px solid #DDDDFF; border-right: 1px solid #AAAAAA; border-bottom: 1px solid #AAAAAA; font-weight: bold; padding: 10px;}
+div.resultMsg { background-color : #CCCCCC; color: #333333; text-align: center; border-top: 1px solid silver; border-left: 1px solid silver; font-weight: bold; border-right: 1px solid #666666; border-bottom: 1px solid #666666; padding: 10px;}
+
+div.xoopsCode {background: #C2CDD6;
+  border: 1px inset #000080;
+  font-family: "Courier New",Courier,monospace;
+  padding: 0px 6px 6px 6px;}
+div.xoopsQuote {background: #C2CDD6;
+  border: 1px inset #000080;
+  font-family: "Courier New",Courier,monospace;
+  padding: 0px 6px 6px 6px;}
+
+
+.comTitle {font-weight: bold; margin-bottom: 2px;}
+.comText {padding: 2px;}
+.comUserStat {font-size: 10px; color: #43506B; font-weight:bold; border: 1px solid silver; background-color: #C2CDD6; margin: 2px; padding: 2px;}
+.comUserStatCaption {font-weight: normal;}
+.comUserStatus {margin-left: 2px; margin-top: 10px; color: #43506B; font-weight:bold; font-size: 10px;}
+.comUserRank {margin: 2px;}
+.comUserRankText {font-size: 10px; font-weight:bold;}
+.comUserRankImg {border: 0;}
+.comUserName {}
+.comUserImg {margin: 2px;}
+.comDate {font-weight: normal; font-style: italic; font-size: smaller}
+.comDateCaption {font-weight: bold; font-style: normal;}

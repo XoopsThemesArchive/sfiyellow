@@ -1,0 +1,473 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<{$xoops_langcode}>" lang="<{$xoops_langcode}>">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=<{$xoops_charset}>" />
+<meta http-equiv="content-language" content="<{$xoops_langcode}>" />
+<meta name="robots" content="<{$xoops_meta_robots}>" />
+<meta name="keywords" content="<{$xoops_meta_keywords}>" />
+<meta name="description" content="<{$xoops_meta_description}>" />
+<meta name="rating" content="<{$xoops_meta_rating}>" />
+<meta name="author" content="<{$xoops_meta_author}>" />
+<meta name="copyright" content="<{$xoops_meta_copyright}>" />
+<meta name="generator" content="XOOPS" />
+<title><{$xoops_sitename}> - <{$xoops_pagetitle}></title>
+<link href="<{$xoops_url}>/favicon.ico" rel="SHORTCUT ICON" />
+<link rel="stylesheet" type="text/css" media="all" href="<{$xoops_url}>/xoops.css" />
+<link rel="stylesheet" type="text/css" media="all" href="<{$xoops_themecss}>" />
+<!-- RMV: added module header -->
+<{$xoops_module_header}>
+<script type="text/javascript">
+<!--
+<{$xoops_js}>
+//-->
+</script>
+<!-- DEBUT DU SCRIPT -->
+<SCRIPT LANGUAGE="JavaScript">
+navvers = navigator.appVersion.substring(0,1);
+if (navvers > 3)
+	navok = true;
+else
+	navok = false;
+
+today = new Date;
+jour = today.getDay();
+numero = today.getDate();
+if (numero<10)
+	numero = "0"+numero;
+mois = today.getMonth();
+if (navok)
+	annee = today.getFullYear();
+else
+	annee = today.getYear();
+TabJour = new Array("Dimanche","Lundi","Mardi","Mercredi","Jeudi","Vendredi","Samedi");
+TabMois = new Array("janvier","f&eacute;vrier","mars","avril","mai","juin","juillet","aout","septembre","octobre","novembre","dé&eacute;embre");
+messageDate = TabJour[jour] + " " + numero + " " + TabMois[mois] + " " + annee;
+
+
+
+
+
+Today = new Date;
+Heure = Today.getHours();
+Min = Today.getMinutes();
+Sec=Today.getSeconds();
+
+	if (Sec<=9)
+		Sec="0"+Sec
+Message = " | " + Heure + ":" + Min + ":" + Sec + "s";
+
+</SCRIPT>
+<!-- FIN DU SCRIPT -->
+<SCRIPT LANGUAGE="JavaScript">
+function HeureCheck()
+{
+krucial = new Date;
+heure = krucial.getHours();
+min = krucial.getMinutes();
+sec = krucial.getSeconds();
+
+if (sec < 10)
+{
+sec0 = "0";
+}
+else
+{
+sec0 = "";
+}
+if (min < 10)
+{
+min0 = "0";
+}
+else
+{
+min0 = "";
+}
+if (heure < 10)
+{
+heure0 = "0";
+}
+else
+{
+heure0 = "";
+}
+
+
+DinaHeure = heure0 + heure + ":" + min0 + min + ":" + sec0 + sec;
+total = DinaHeure
+
+document.time.timebox.value = total;
+tempo = setTimeout("HeureCheck()", 1000)
+}
+</SCRIPT>
+<!-- FIN DU SCRIPT -->
+</head>
+<body background="<{$xoops_imageurl}>BG.gif" onLoad="HeureCheck()" onUnload="clearTimeout(tempo)">
+<table cellspacing="0" cellpadding="0" width="100%" border="0">
+<tbody>
+<tr>
+<td height="9"><img height="9" alt="" src="<{$xoops_imageurl}>spacer.gif" width="18" /></td>
+<td height="9"><img height="9" alt="" src="<{$xoops_imageurl}>spacer.gif" width="9" /></td>
+<td height="9"><img height="9" alt="" src="<{$xoops_imageurl}>spacer.gif" width="18" /></td>
+</tr>
+<tr>
+<td height="9">&nbsp;</td>
+<td height="9">
+<table cellspacing="0" cellpadding="0" width="100%" border="0">
+<tbody>
+<tr>
+<td class="bgblack">
+<table cellspacing="1" cellpadding="0" width="100%" border="0">
+<tbody>
+<tr>
+<td class="bggray">
+<table cellspacing="0" cellpadding="0" width="100%" border="0">
+<tbody>
+<tr>
+<td width="9"><img height=9 alt="" src="<{$xoops_imageurl}>spacer.gif" width="9" /></td>
+<td><img height="9" alt="" src="<{$xoops_imageurl}>spacer.gif" width="9" /><img height="9" alt="" src="<{$xoops_imageurl}>spacer.gif" width="12" /><img height="9" alt="" src="<{$xoops_imageurl}>spacer.gif" width="9" /></td>
+<td width="9"><img height="9" alt="" src="<{$xoops_imageurl}>spacer.gif" width="9" /></td>
+</tr>
+<tr>
+<td width="9"><img height="9" alt="" src="<{$xoops_imageurl}>spacer.gif" width="9" /></td>
+<td valign="top">
+<table cellspacing="0" cellpadding="0" width="100%" align="center" border="0">
+<tbody>
+<tr>
+<td width="4" background="<{$xoops_imageurl}>header_top_silver.gif"><img alt="" src="<{$xoops_imageurl}>header_top_lcorner.gif" width="5" height="20" /></td>
+<td>
+<table cellspacing="0" cellpadding="0" width="100%" border="0">
+<tbody>
+<tr>
+<td width="25%" background="<{$xoops_imageurl}>header_top_silver.gif" nowrap="nowrap">
+<div align="center" nowrap="nowrap"><span id="clock">
+<span id="clock">
+<FORM NAME="time"style="margin: 0px; padding: 0px;">
+<SCRIPT LANGUAGE="JavaScript">
+document.write(messageDate); 
+</SCRIPT>
+ | <INPUT TYPE="text" NAME="timebox" SIZE=7 style=" padding: 0px; background-color : transparent; border-color : transparent;  border-top-width : 0px; border-right-width : 1px; border-bottom-width : 0px; border-left-width : 0px;text-indent : 0px;"></FORM>
+</span></div>
+</td>
+<td width="8"><img alt="" src="<{$xoops_imageurl}>header_middle.gif" width="8" height="20" /></td>
+<td valign="center" background="<{$xoops_imageurl}>header_top.gif">
+<table cellspacing="0" cellpadding="0" width="350" align="right" border="0">
+<tbody>
+<tr>
+<td align="center" nowrap="nowrap">
+<a href="<{$xoops_url}>/modules/news/" class="bold">Articles</a>
+</td>
+<td width="5">
+<div align="center" class="white"><span class="bold">&nbsp;|&nbsp;</span></div>
+</td>
+<td align="center" nowrap="nowrap">
+<a href="<{$xoops_url}>/user.php/" class="bold">Profil</a>
+</td>
+<td width="5">
+<div align="center" class="white"><span class="bold">&nbsp;|&nbsp;</span></div>
+</td>
+<td align="center" nowrap="nowrap">
+<a href="<{$xoops_url}>/modules/newbb/" class="bold">Forum</a>
+</td>
+<td width="5">
+<div align="center" class="white"><span class="bold">&nbsp;|&nbsp;</span></div>
+</td>
+<td align="center" nowrap="nowrap">
+<a href="<{$xoops_url}>/modules/mydownloads/" class="bold">Portails PHP</a>
+</td>
+<td width="5">
+<div align="center" class="white"><span class="bold">&nbsp;|&nbsp;</span></div>
+</td>
+<td align="center" nowrap="nowrap">
+<a href="<{$xoops_url}>/modules/mydrivers/" class="bold">Drivers</a>
+</td>
+<td width="5">
+<div align="center" class="white"><span class="bold">&nbsp;|&nbsp;</span></div>
+</td>
+<td align="center" nowrap="nowrap">
+<a href="<{$xoops_url}>/modules/mylinuxutils/" class="bold">RPM Linux</a>
+</td>
+<td width="5">
+<div align="center" class="white"><span class="bold">&nbsp;|&nbsp;</span></div>
+</td>
+<td align="center" nowrap="nowrap">
+<a href="<{$xoops_url}>/modules/myfreewares/" class="bold">Freewares</a>
+</td>
+<td width="5">
+<div align="center" class="white"><span class="bold">&nbsp;|&nbsp;</span></div>
+</td>
+<td align="center" nowrap="nowrap">
+<a href="<{$xoops_url}>/modules/contact/" class="bold">Contact</a>
+</td>
+<td>
+<div align="center"><img height="5" alt="" src="<{$xoops_imageurl}>spacer.gif" width="3" /></div>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td width="4"><img alt="" src="<{$xoops_imageurl}>header_top_rcorner.gif" width="7" height="20" /></td>
+</tr>
+<tr>
+<td width="4" background="<{$xoops_imageurl}>header_bg.gif">
+<img alt="" src="<{$xoops_imageurl}>header_mid_left.gif" width="5" height="48" />
+</td>
+<td>
+<table cellspacing="0" cellpadding="0" width="100%" border="0">
+<tbody>
+<tr>
+<td width="292" background="<{$xoops_imageurl}>header_bg.gif"><a href="<{$xoops_url}>/index.php"><img border="0" src="<{$xoops_imageurl}>wesite-banner-2.jpg" width="447" alt="L'informatique Pratique"/></a></td>
+<td valign="center" background="<{$xoops_imageurl}>header_bg.gif">&nbsp;
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td width="4">
+<img alt="" src="<{$xoops_imageurl}>header_mid_right.gif" width="7" height="48" /></td>
+</tr>
+<tr>
+<td width="4" background="<{$xoops_imageurl}>header_bottom_silver.gif">
+<img alt="" src="<{$xoops_imageurl}>header_bottom_lcorner.gif" width="5" height="9" /></td>
+<td background="<{$xoops_imageurl}>header_bottom_silver.gif">
+<img height="7" alt="" src="<{$xoops_imageurl}>spacer.gif" width="10" /></td>
+<td width="4">
+<img alt="" src="<{$xoops_imageurl}>header_bottom_rcorner.gif" width="7" height="9" /></td>
+</tr>
+</tbody>
+</table>
+</td>
+<td width="9">
+<img height="9" alt="" src="<{$xoops_imageurl}>spacer.gif" width="9" /></td>
+</tr>
+<tr>
+<td width="9">
+<img height="9" alt="" src="<{$xoops_imageurl}>spacer.gif" width="9" /></td>
+<td>
+<img height="9" alt="" src="<{$xoops_imageurl}>spacer.gif" width="9" /><img height="9" 
+alt="" src="<{$xoops_imageurl}>spacer.gif" width="12" /><img height="9" 
+alt="" src="<{$xoops_imageurl}>spacer.gif" width="9" /></td>
+<td width="9">
+<img height="9" alt="" src="<{$xoops_imageurl}>spacer.gif" width="9" /></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td height="9">&nbsp;</td>
+</tr>
+<tr>
+<td width="9" height="9"><img height="9" alt="" src="<{$xoops_imageurl}>spacer.gif" width="9" /></td>
+<td height="9"><img height="9" alt="" src="<{$xoops_imageurl}>spacer.gif" width="9" /></td>
+<td width="9" height="9"><img height="9" alt="" src="<{$xoops_imageurl}>spacer.gif" width="9" /></td>
+</tr>
+<tr>
+<td width="9"><img height="9" alt="" src="<{$xoops_imageurl}>spacer.gif" width="9" /></td>
+<td>
+<table cellspacing="0" cellpadding="0" width="100%" border="0">
+<tbody>
+<tr>
+<td class="bgblack">
+<table cellspacing="1" cellpadding="0" width="100%" border="0">
+<tbody>
+<tr>
+<td class="bggray">
+
+<table cellspacing="0" cellpadding="0" width="100%" border="0">
+<tbody>
+<tr>
+<td width="9">
+<img height="9" alt="" src="<{$xoops_imageurl}>spacer.gif" width="9" /></td>
+<td>
+<img height="9" alt="" src="<{$xoops_imageurl}>spacer.gif" width="9" /></td>
+<td width="12">
+<img height="9" alt="" src="<{$xoops_imageurl}>spacer.gif" width="12" /></td>
+<td>
+<img height="9" alt="" src="<{$xoops_imageurl}>spacer.gif" width="9" /></td>
+<td width="9">
+<img height="9" alt="" src="<{$xoops_imageurl}>spacer.gif" width="9" /></td>
+</tr>
+<tr>
+<td width="9">
+<img height="9" alt="" src="<{$xoops_imageurl}>spacer.gif" width="9" /></td>
+<td valign="top" width="150">
+        <!-- Start left blocks loop -->
+        <{foreach item=block from=$xoops_lblocks}>
+          <{include file="sfi/theme_blockleft.html"}>
+        <{/foreach}>
+        <!-- End left blocks loop -->
+
+      </td>
+<td width="6">
+<img height="9" alt="" src="<{$xoops_imageurl}>spacer.gif" width="6" /></td>
+<td id="centercolumn" valign="top">
+<div align="center">
+<{$xoops_banner}>
+<{if $xoops_banner==1}><br /><{/if}>
+</div>
+<!-- Display center blocks if any -->
+        <{if $xoops_showcblock == 1}>
+
+        <table cellspacing="0" width="100%">
+          <tr>
+            <td id="centerCcolumn" colspan="2">
+
+
+<!-- Start center-center blocks loop -->
+            <{foreach item=block from=$xoops_ccblocks}>
+              <{include file="sfi/theme_blockcenter_c.html"}>
+            <{/foreach}>
+            <!-- End center-center blocks loop -->
+
+            </td>
+          </tr>
+          <tr>
+            <td id="centerLcolumn">
+
+            <!-- Start center-left blocks loop -->
+              <{foreach item=block from=$xoops_clblocks}>
+                <{include file="sfi/theme_blockcenter_l.html"}>
+              <{/foreach}>
+            <!-- End center-left blocks loop -->
+
+            </td><td id="centerRcolumn">
+
+            <!-- Start center-right blocks loop -->
+              <{foreach item=block from=$xoops_crblocks}>
+                <{include file="sfi/theme_blockcenter_r.html"}>
+              <{/foreach}>
+            <!-- End center-right blocks loop -->
+
+            </td>
+          </tr>
+        </table>
+
+        <{/if}>
+        <!-- End display center blocks -->
+
+        <div id="content">
+<{if $xoops_pagetitle == Articles}>	
+<{$xoops_contents}>
+<{else}>
+<table cellspacing="0" cellpadding="0" width="100%" border="0">
+<tbody>
+<tr>
+<td width="4">
+<img alt="" src="<{$xoops_imageurl}>table_bottom_lcorner_silver-180.gif" width="4" height="10" /></td>
+<td background="<{$xoops_imageurl}>table_bottom_silver-180.gif">
+<img height="8" alt="" src="<{$xoops_imageurl}>spacer.gif" width="10" /></td>
+<td width="4">
+<img alt="" src="<{$xoops_imageurl}>table_bottom_rcorner_silver-180.gif" width="6" height="10" /></td>
+</tr>                          
+<tr>
+<td width="4" background="<{$xoops_imageurl}>table_left_side.gif">
+<img height="10" alt="" src="<{$xoops_imageurl}>spacer.gif" width="4" /></td>
+<td valign="top" class="bglightblue">
+<table cellspacing="1" cellpadding="0" width="100%" align="center" border="0">
+<tbody>
+<tr>
+<td align="middle">
+<img height="2" alt="" src="<{$xoops_imageurl}>spacer.gif" width="12" />
+</td>
+</tr>
+<tr class="bglightblue">
+<td width="100%" class="fgoffwhite"><span class="content">
+<{$xoops_contents}>
+</span></td>
+</tr>
+<tr>
+<td align="middle"><img height="2" alt="" src="<{$xoops_imageurl}>spacer.gif" width="12" /></td>
+</tr>
+</tbody>
+</table>
+</td>
+<td width="4" background="<{$xoops_imageurl}>table_right_side.gif">
+<img height="10" alt="" src="<{$xoops_imageurl}>spacer.gif" width="4" /></td>
+</tr>
+<tr>
+<td width="4">
+<img alt="" src="<{$xoops_imageurl}>table_bottom_lcorner_silver.gif" width="4" height="10" /></td>
+<td background="<{$xoops_imageurl}>table_bottom_silver.gif">
+<img height="8" alt="" src="<{$xoops_imageurl}>spacer.gif" width="10" /></td>
+<td width="4">
+<img alt="" src="<{$xoops_imageurl}>table_bottom_rcorner_silver.gif" width="6" height="10" /></td>
+</tr>
+</tbody>
+</table>
+<br>
+<{/if}>
+
+          
+	
+        </div>
+      </td>
+
+      <{if $xoops_showrblock == 1}>
+<td width="6">
+<img height="9" alt="" src="<{$xoops_imageurl}>spacer.gif" width="6" /></td>
+<td valign="top" width="150">
+
+        <!-- Start right blocks loop -->
+        <{foreach item=block from=$xoops_rblocks}>
+          <{include file="sfi/theme_blockright.html"}>
+        <{/foreach}>
+        <!-- End right blocks loop -->
+      </td>
+
+      <{/if}>
+
+<td width="9">
+<img height="9" alt="" src="<{$xoops_imageurl}>spacer.gif" width="9" /></td>
+</tr>
+<tr>
+<td width="9">
+<img height="9" alt="" src="<{$xoops_imageurl}>spacer.gif" width="9" /></td>
+<td>
+<img height="9" alt="" src="<{$xoops_imageurl}>spacer.gif" width="9" /></td>
+<td width="12">
+<img height="9" alt="" src="<{$xoops_imageurl}>spacer.gif" width="12" /></td>
+<td>
+<img height="9" alt="" src="<{$xoops_imageurl}>spacer.gif" width="9" /></td>
+<td width="9">
+<img height="9" alt="" src="<{$xoops_imageurl}>spacer.gif" width="9" />
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td width="9">&nbsp;</td>
+</tr>
+<tr>
+<td width="9" height="9"><img height="9" alt="" src="<{$xoops_imageurl}>spacer.gif" width="9" /></td>
+<td height="9"><img height="9" alt="" src="<{$xoops_imageurl}>spacer.gif" width="9" /></td>
+<td width="9" height="9"><img height="9" alt="" src="<{$xoops_imageurl}>spacer.gif" width="9" /></td>
+</tr>
+</tbody>
+</table>
+<br>
+  <table cellspacing="0" width="100%" align="center">
+    <tr id="footerbar">
+      <td><p align="center"><{$xoops_footer}></p></td>
+    </tr>
+  </table>
+  <br>
+</body>
+</html>
